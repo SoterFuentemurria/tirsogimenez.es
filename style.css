@@ -1,0 +1,259 @@
+/* tirsogimenez.es — hoja de estilo compartida */
+
+:root {
+  --fondo: #fbfbf8;
+  --texto: #1c1c1c;
+  --suave: #5a5a56;
+  --acento: #1f5a73;
+  --linea: #d8d8d2;
+  --ancho: 40rem;
+}
+
+html {
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: Charter, "Bitstream Charter", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--acento);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover,
+a:focus {
+  text-decoration-thickness: 2px;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 0.5rem;
+}
+
+h1 { font-size: 1.9rem; margin-top: 1.5rem; }
+h2 { font-size: 1.45rem; margin-top: 2.5rem; }
+h3 { font-size: 1.15rem; margin-top: 2rem; }
+
+p, ul, ol { margin: 0 0 1rem; }
+
+small, .meta, .credito, .pie { color: var(--suave); }
+
+/* Cabecera y navegación */
+
+.cabecera, main, .pie {
+  max-width: var(--ancho);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.cabecera {
+  padding-top: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--linea);
+}
+
+.marca {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+
+.marca a {
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.cabecera nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
+  font-size: 0.95rem;
+}
+
+.cabecera nav a {
+  text-decoration: none;
+}
+
+.cabecera nav a:hover,
+.cabecera nav a:focus {
+  text-decoration: underline;
+}
+
+.cabecera nav a[aria-current="page"] {
+  color: var(--texto);
+  font-weight: 600;
+}
+
+/* Portada */
+
+.subtitulo {
+  font-size: 1.05rem;
+  color: var(--suave);
+  margin-bottom: 2rem;
+}
+
+.declaracion {
+  margin-top: 2.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--acento);
+}
+
+/* Fichas */
+
+.ficha {
+  margin: 2.25rem 0 3rem;
+}
+
+.ficha h2, .ficha h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.meta {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  margin: 0 0 0.5rem;
+}
+
+.video iframe,
+.video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.credito {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+}
+
+.audio {
+  margin: 0 0 1rem;
+}
+
+.audio p {
+  margin: 0 0 0.2rem;
+  font-size: 0.95rem;
+}
+
+audio {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.ficha img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--linea);
+  margin: 0 0 1rem;
+}
+
+/* Tablas */
+
+.tabla {
+  overflow-x: auto;
+  margin: 0 0 1.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.45rem 0.6rem 0.45rem 0;
+  border-bottom: 1px solid var(--linea);
+}
+
+th {
+  font-weight: 600;
+  border-bottom-width: 2px;
+}
+
+td.num, th.num {
+  white-space: nowrap;
+}
+
+/* Listas plegadas */
+
+details {
+  border-top: 1px solid var(--linea);
+  padding: 0.5rem 0;
+}
+
+details:last-of-type {
+  border-bottom: 1px solid var(--linea);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.25rem 0;
+}
+
+details ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0.75rem;
+  font-size: 0.95rem;
+}
+
+details li {
+  margin-bottom: 0.45rem;
+}
+
+.cita {
+  color: var(--suave);
+  font-size: 0.85rem;
+}
+
+/* Pie */
+
+.pie {
+  margin-top: 4rem;
+  padding-top: 1.25rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid var(--linea);
+  font-size: 0.9rem;
+}
+
+.pie p {
+  margin: 0 0 0.3rem;
+}
+
+@media (min-width: 48em) {
+  .cabecera, main, .pie {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .cabecera {
+    padding-top: 2rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin-top: 2rem;
+  }
+}

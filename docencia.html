@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Docencia · Tirso Giménez Angulo</title>
+  <meta name="description" content="Docencia de Tirso Giménez Angulo en el Conservatorio Superior de Música de Murcia: asignaturas de tecnología musical, conciertos y audiciones, tutoría de trabajos fin de estudios y herramientas (6P, Escaladero).">
+  <link rel="canonical" href="https://tirsogimenez.es/docencia.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:url" content="https://tirsogimenez.es/docencia.html">
+  <meta property="og:title" content="Docencia · Tirso Giménez Angulo">
+  <meta property="og:description" content="Asignaturas de tecnología musical en el Conservatorio Superior de Música de Murcia, conciertos y audiciones, tutoría de trabajos fin de estudios y herramientas (6P, Escaladero).">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="cabecera">
+    <p class="marca"><a href="index.html">Tirso Giménez Angulo</a></p>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="obras.html">Obras</a></li>
+        <li><a href="grabacion.html">Grabación</a></li>
+        <li><a href="docencia.html" aria-current="page">Docencia</a></li>
+        <li><a href="investigacion.html">Investigación</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Docencia</h1>
+
+    <h2 id="asignaturas">Asignaturas</h2>
+    <p>Profesor del Conservatorio Superior de Música de Murcia desde el curso 2021/22. Ha impartido todas las asignaturas de tecnología del centro:</p>
+    <ul>
+      <li>Informática Aplicada I y II</li>
+      <li>Tecnología del Sonido I–IV</li>
+      <li>Composición Asistida por Ordenador I–IV</li>
+      <li>Acústica</li>
+    </ul>
+    <p>Actualmente: Composición Asistida por Ordenador I–IV, Tecnología del Sonido I–IV y Acústica.</p>
+
+    <h2 id="conciertos">Conciertos y audiciones</h2>
+    <ul>
+      <li>Audición de Composición Asistida por Ordenador al final de cada cuatrimestre, desde 2021/22: obras de los alumnos con electrónica, en concierto.</li>
+      <li>15-12-2021 · Concierto de electroacústica de los alumnos de CAO, III Semana de la Creación · José Agüera · <a href="https://csmmurcia.com/wp-content/uploads/2021/11/III-Semana-de-la-Creaci%C3%B3n.pdf">cartel-programa</a></li>
+      <li>12-2022 · Charla sobre <em>Escaladero</em>, IV Semana de la Creación, con Luis Pérez de Tudela Gil (colectivo Tecné)</li>
+      <li>12-2023 · Concierto de electroacústica, V Semana de la Creación · José Agüera · <a href="https://csmmurcia.com/wp-content/uploads/2021/12/agenda-IV-Semana-de-la-Creaci%C3%B3n.pdf">agenda</a></li>
+      <li>24-04-2026 · Primer concierto final de grado del Aula de Composición: tutoría de <em>El vuelo de Ícaro</em> (Ramón Romero y Paco Castaño) junto a Francisco Javier Pérez Albaladejo; sonorización y grabación a cargo del Aula de Tecnología Musical · <a href="https://csmmurcia.com/el-aula-de-composicion-del-conservatorio-superior-de-musica-de-murcia-celebra-su-primer-concierto-final-de-grado/">noticia</a></li>
+    </ul>
+
+    <h2 id="tfe">Trabajo Fin de Estudios</h2>
+    <ul>
+      <li>Tutor de trabajos fin de estudios del Departamento de Composición.</li>
+      <li>Autor de la <em>Guía del Trabajo Fin de Estudios — Composición</em> del centro, enlazada en la guía docente de Composición (<a href="investigacion.html#guia-tfe">ficha y PDF en Investigación</a>).</li>
+    </ul>
+
+    <h2 id="herramientas">Herramientas</h2>
+
+    <article class="ficha" id="seis-p">
+      <h3>6P</h3>
+      <p class="meta">2023 · Instrumento musical digital de seis pads que funciona en el navegador.</p>
+      <p>Desarrollado para el Trabajo Fin de Máster <em>Hacia una práctica instrumental digital en el aula de música</em> (Universidad Internacional de Valencia, 2023).</p>
+      <p><a href="https://sinte-tfm.herokuapp.com/">sinte-tfm.herokuapp.com</a></p>
+    </article>
+
+    <article class="ficha" id="escaladero">
+      <h3>Escaladero</h3>
+      <p class="meta">2022 · Herramienta de composición asistida por ordenador. Max/MSP, Node for Max y una base de datos MongoDB.</p>
+      <img src="docencia/escaladero-captura.webp" width="1600" height="957" alt="Captura de pantalla del patch de Escaladero en Max/MSP: selectores de escala, intervalos y acordes por grados, y pentagramas con la escala y sus acordes." loading="lazy">
+      <p class="credito">Sin descarga: el patch depende de una base de datos en línea y no funciona de forma autónoma.</p>
+      <p>Proyecto con Luis Pérez de Tudela Gil, profesor del conservatorio profesional y miembro del colectivo Tecné, presentado en una charla dentro de la IV Semana de la Creación del CSMM (diciembre de 2022). La idea del sistema de escalas por tetracordos es suya; el diseño y la ejecución técnica, de Tirso. El programa construye cada escala como dos tetracordos más el intervalo que los une, genera todos los modos de cada combinación y elimina duplicados: el resultado es la enumeración completa de las escalas heptatónicas posibles en el temperamento igual, 66 conjuntos y 462 modos (16 de ellos capicúas, con los dos tetracordos iguales o en espejo). Cada escala se guarda con su interválica y los acordes por terceras, cuartas y quintas sobre cada grado, y la base de datos se consulta desde Max por características: qué escalas contienen un acorde, un intervalo o un conjunto dado.</p>
+    </article>
+  </main>
+
+  <footer class="pie">
+    <p>Tirso Giménez Angulo · <a href="mailto:tirsoclarineteharo@gmail.com">tirsoclarineteharo@gmail.com</a></p>
+    <p><a href="https://www.youtube.com/@CSMMassotti/videos">Canal de YouTube del Conservatorio Superior de Música de Murcia</a></p>
+  </footer>
+</body>
+</html>
