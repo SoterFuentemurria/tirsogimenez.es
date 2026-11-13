@@ -103,7 +103,16 @@ small, .meta, .credito, .pie { color: var(--suave); }
   margin-bottom: 2rem;
 }
 
+.retrato {
+  display: block;
+  width: 100%;
+  max-width: 15rem;
+  height: auto;
+  margin: 0 0 1.5rem;
+}
+
 .declaracion {
+  clear: both;
   margin-top: 2.5rem;
   padding-left: 1rem;
   border-left: 3px solid var(--acento);
@@ -255,5 +264,10 @@ details li {
   h1 {
     font-size: 2.2rem;
     margin-top: 2rem;
+  }
+  .retrato {
+    float: right;
+    width: 14rem;
+    margin: 0.35rem 0 1rem 1.75rem;
   }
 }
